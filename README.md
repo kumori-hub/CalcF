@@ -1,6 +1,5 @@
-Batman Runner - Web Game
+CalcF - Calculadora de Posologias
 
-Um projeto simples de jogo para navegador utilizando manipulação de DOM e animações CSS.
 Como funciona
 
   O usuário deve selecionar qual tipo de fórmula farmacêutica quer calcular.
