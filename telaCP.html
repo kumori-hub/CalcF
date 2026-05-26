@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CalcF - Calculadora de Posologias</title>
+    <title>CalcF - Comprimidos/Cápsulas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,8 +13,9 @@
 <body class="bg-light">
     <nav class="navbar navbar-dark bg-primary shadow-sm">
         <div class="container-fluid">
+            <a href="index.html" class="btn btn-outline-light btn-sm">Voltar</a>
             <span class="navbar-brand mb-0 h1">CalcF</span>
-            <span class="text-white-50">Calculadora de Posologias</span>
+            <div style="width: 60px;"></div>
         </div>
     </nav>
 
@@ -23,24 +24,36 @@
             <div class="col-md-6 col-lg-5">
                 <div class="card shadow-lg border-0 rounded-4">
                     <div class="card-header bg-primary text-white border-0 rounded-top-4 py-4">
-                        <h5 class="card-title mb-0 text-center">Seleção de Fórmula</h5>
+                        <h5 class="card-title mb-0 text-center">Comprimidos/Cápsulas</h5>
                     </div>
-                    <img src="medicamentos.png" class="card-img-middle p-4" alt="Medicamentos"
+                    <img src="imgCps.png" class="card-img-middle p-4" alt="Comprimidos"
                         style="object-fit: contain; height: 200px;">
                     <div class="card-body">
-                        <p class="card-text text-muted mb-4 text-center">Escolha a forma farmacêutica desejada para
-                            calcular a posologia:</p>
-                        <div class="button-grid">
-                            <a href="telaCP.html" class="btn btn-primary btn-lg rounded-3">Comprimidos/Cápsulas</a>
-                            <a href="telaGotas.html" class="btn btn-info btn-lg rounded-3">Gotas</a>
-                            <a href="telaMl.html" class="btn btn-success btn-lg rounded-3">Xarope (ML)</a>
+                        <p class="text-muted mb-4 text-center">Insira os valores para calcular a posologia:</p>
+
+                        <div class="mb-3">
+                            <label for="num1" class="form-label">Quantidade de CPs por dose</label>
+                            <input type="number" class="form-control form-control-lg" id="num1" placeholder="Ex: 2"
+                                min="0">
                         </div>
+
+                        <div class="mb-4">
+                            <label for="num2" class="form-label">Quantidade de doses por dia</label>
+                            <input type="number" class="form-control form-control-lg" id="num2" placeholder="Ex: 3"
+                                min="0">
+                        </div>
+
+                        <button onclick="realizarCalculoCP()"
+                            class="btn btn-primary btn-lg w-100 rounded-3 mb-3">Calcular Resultado</button>
+
+                        <div id="resultado"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

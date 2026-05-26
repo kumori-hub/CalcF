@@ -1,0 +1,175 @@
+/* Modern Styling for CalcF */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Card Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Result Display */
+#resultado {
+    margin-top: 1rem;
+}
+
+.resultado-container {
+    padding: 1rem;
+}
+
+/* Alert/Result Styling */
+.alert {
+    border-radius: 1rem;
+    border: none;
+    margin-top: 1rem;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 0.75rem;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Button Styling */
+.btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+/* Button Grid Container */
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.button-grid .btn {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container Padding */
+.container {
+    max-width: 850px;
+}
+
+/* Card Header */
+.card-header {
+    font-weight: 700;
+}
+
+/* Responsive - Extra Small Devices */
+@media (max-width: 375px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        border-radius: 0.5rem !important;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .form-control-lg {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    .card-header {
+        padding: 1rem 0.5rem !important;
+    }
+
+    .card-body {
+        padding: 1rem 0.75rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive - Small Devices */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .text-white-50 {
+        font-size: 0.9rem;
+    }
+
+    .d-grid {
+        gap: 0.75rem !important;
+    }
+
+    img.card-img-middle {
+        height: 150px !important;
+    }
+}
+
+/* Responsive - Medium Devices */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+/* Responsive - Large Devices */
+@media (min-width: 769px) {
+    .container {
+        max-width: 850px;
+    }
+}
