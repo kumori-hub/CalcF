@@ -15,7 +15,6 @@ function realizarCalculoCP() {
     let resultado1 = (num1 * num2) * 30;
     let resultado2 = (num1 * num2) * 60;
 
-
     // Exibe o resultado na tela com a cor verde
     visorResultado.style.color = '#28a745';
     visorResultado.innerText = resultado1 + ' CPs para 1 mês\n' + resultado2 + ' CPs para 2 meses';
@@ -43,7 +42,7 @@ function realizarCalculoGts() {
 
     // Exibe o resultado na tela com a cor verde
     visorResultado.style.color = '#28a745';
-    visorResultado.innerText = resultado1 + ' frascos para 1 mês\n' + resultado2 + ' frascos para 2 meses';
+    visorResultado.innerText = resultado1.toFixed(1) + ' frascos para 1 mês\n' + resultado2.toFixed(1) + ' frascos para 2 meses';
 }
 
 function realizarCalculoMl() {
@@ -67,5 +66,5 @@ function realizarCalculoMl() {
 
     // Exibe o resultado na tela com a cor verde
     visorResultado.style.color = '#28a745';
-    visorResultado.innerText = resultado1 + ' frascos para 1 mês\n' + resultado2 + ' frascos para 2 meses';
+    visorResultado.innerText = resultado1.toFixed(1) + ' frascos para 1 mês\n' + resultado2.toFixed(1) + ' frascos para 2 meses';
 }
